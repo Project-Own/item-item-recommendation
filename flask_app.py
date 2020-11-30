@@ -3,6 +3,7 @@ from sklearn.metrics.pairwise import linear_kernel
 import pickle
 import pandas as pd
 from flask_cors import CORS
+import os
 
 # tdidf.pkl
 tfidf_matrix = pickle.load(open("tfidfvector.pkl","rb"))
