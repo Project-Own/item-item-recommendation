@@ -1,1 +1,1 @@
-web:gunicorn --bind localhost:$PORT flask_app:app
+web: gunicorn --bind localhost:$PORT app:app
