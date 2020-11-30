@@ -40,7 +40,7 @@ def index():
 
 @app.route('/recom',methods=['POST'])
 def movie_recommend():
-    content = request.data.decode("utf-8");
+    content = request.data.decode("utf-8")
     print(content)
   
     # print(type(content.decode("utf-8")))
