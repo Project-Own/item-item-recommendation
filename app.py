@@ -64,29 +64,4 @@ if __name__=='__main__':
 
 
 
-# from sklearn.metrics.pairwise import linear_kernel
-# import pickle
-# import pandas as pd
 
-# # tdidf.pkl
-# tfidf_matrix = pickle.load(open("tfidfvector.pkl","rb"))
-# # titles.pkl
-# titles = pickle.load(open("titles.pkl","rb"))
-# # indices.pkl
-# indices = pickle.load(open("indices.pkl","rb"))
-
-# def genre_recommendations(title):
-#     if isinstance(indices[title], pd.core.series.Series):
-#         idx = indices[title][0]
-#     else:
-#         idx = indices[title]
-
-
-#     sim_scores = linear_kernel(tfidf_matrix[idx], tfidf_matrix)
-#     sim_scores = sim_scores.reshape(sim_scores.size)
-#     scores_with_index = pd.Series(sim_scores,index=titles.index)
-#     scores_with_index = scores_with_index.sort_values(ascending=False)
-#     scores_with_index = scores_with_index[1:21]
-#     only_index = scores_with_index.index
-
-#     return titles.iloc[only_index]
